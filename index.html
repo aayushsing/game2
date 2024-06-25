@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic and Reasoning Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for video background */
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
+            opacity: 0.8; /* Adjust opacity as needed */
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="./HOPE_2020_1P3ZgLOy_w8_137.mp4" type="video/mp4">
+        <!-- Add additional source tags for other video formats if needed -->
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1>Test Your Knowledge</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="feedback"></div>
+        <div id="score"></div>
+        <div id="timer"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+
